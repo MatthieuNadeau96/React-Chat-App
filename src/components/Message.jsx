@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Message = ({}) => (
-  <div></div>
+  <div>Message</div>
 );
 
 export default Message;

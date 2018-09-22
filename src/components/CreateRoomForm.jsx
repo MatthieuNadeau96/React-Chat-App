@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CreateRoomForm = ({}) => (
-  <div></div>
+  <div className="createRoomForm child">CreateRoomForm</div>
 );
 
 export default CreateRoomForm;

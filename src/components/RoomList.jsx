@@ -1,7 +1,7 @@
 import React from 'react';
 
 const RoomList = ({}) => (
-  <div></div>
+  <div className="roomList child">RoomList</div>
 );
 
 export default RoomList;
