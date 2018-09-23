@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   display: grid;
   height: 100%;
@@ -62,5 +66,20 @@
 .sendMessageForm {
   grid-area: f;
   background-color: lightgrey;
-  height: 60px;
+  padding: 0;
+}
+
+.sendMessageForm form {
+  height: 100%;
+}
+
+.sendMessageForm input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  padding-left: 10px;
+  font-size: 1.2em;
+}
+.sendMessageForm input:focus {
+  outline: none;
 }
