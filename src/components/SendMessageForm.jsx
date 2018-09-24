@@ -10,10 +10,17 @@ class SendMessageForm extends Component {
     this.setState({message: e.target.value})
   }
 
+  handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(this.state.message);
+    // send message
+  }
+
   render() {
-    console.log(this.state.message)
     return (
-      <form className="sendMessageForm child">
+      <form
+        onSubmit={this.handleSubmit}
+        className="sendMessageForm child">
         <input
           onChange={this.handleChange}
           value={this.state.message}
