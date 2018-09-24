@@ -1,11 +1,13 @@
 import React from 'react';
 
 const SendMessageForm = ({}) => (
-  <div className="sendMessageForm child">
-    <form>
-      <input type="text" placeholder="Enter your message here..."/>
-    </form>
-  </div>
+  <form className="sendMessageForm child">
+    <input
+      onChange={this.handleChange }
+      type="text"
+      placeholder="Type your message and press ENTER"
+    />
+  </form>
 );
 
 export default SendMessageForm;
