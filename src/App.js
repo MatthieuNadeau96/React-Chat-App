@@ -27,7 +27,7 @@ class App extends Component {
     .then(currentUser => {
       this.currentUser = currentUser
       this.currentUser.subscribeToRoom({
-        roomId: 16823118,
+        roomId: 17095431,
         hooks: {
           onNewMessage: message => {
             this.setState({
@@ -42,7 +42,7 @@ class App extends Component {
   sendMessage = (text) => {
     this.currentUser.sendMessage({
       text,
-      roomId: 16823118
+      roomId: 17095431
     })
   }
 
