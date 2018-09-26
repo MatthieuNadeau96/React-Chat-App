@@ -4,7 +4,7 @@
 
 .App {
   display: grid;
-  height: 100%;
+  height: 800px;
   width: 700px;
   max-width: 75%;
   margin: 50px auto;
@@ -12,6 +12,7 @@
   border-radius: 4px;
   /* grid-template-columns: repeat(6, 1fr); */
   grid-template-columns: 1fr 3fr;
+  grid-auto-rows: 1fr 100px;
   grid-template-areas:
   "r m m m m m"
   "n f f f f f"
@@ -24,7 +25,7 @@
 .messageList {
   grid-area: m;
   background-color: white;
-  height: 350px;
+  height: 100%;
 }
 
 .message {
@@ -48,7 +49,7 @@
 .createRoomForm {
   grid-area: n;
   background-color: darkgrey;
-  height: 60px;
+  height: 100%;
 }
 
 .sendMessageForm {
@@ -75,7 +76,7 @@
 .roomList {
   grid-area: r;
   background-color: #655e99;
-  height: 350px;
+  height: 100%;
 }
 .room-title {
   color: #fff;
@@ -92,3 +93,11 @@
   font-weight: bold;
   color: #ddd;
 }
+
+
+@media (max-width: 950px) {
+  .App {
+    height: 600px;
+  }
+}
+/* FIXME: I want the application to fit mobile screens 100% */
