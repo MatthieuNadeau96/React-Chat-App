@@ -11,7 +11,9 @@ import { tokenUrl, instanceLocator } from './config';
 class App extends Component {
 
   state = {
-    messages: []
+    messages: [],
+    joinableRooms: [],
+    joinedRooms: []
   }
 
   componentDidMount() {
@@ -26,6 +28,16 @@ class App extends Component {
     chatManager.connect()
     .then(currentUser => {
       this.currentUser = currentUser
+
+      this.currentUser.getJoinableRooms()
+      .then(joinableRooms => {
+        this.setState({
+          joinableRooms,
+          joinedRooms: this.currentUser.rooms
+        })
+      })
+      .catch(err => console.log('error on joinableRooms: ', err))
+
       this.currentUser.subscribeToRoom({
         roomId: 17095431,
         hooks: {
@@ -37,6 +49,8 @@ class App extends Component {
         }
       })
     })
+    .catch(err => console.log('error on connecting: ', err))
+
   }
 
   sendMessage = (text) => {
@@ -51,7 +65,7 @@ class App extends Component {
       <div className="App">
         <CreateRoomForm />
         <MessageList messages={this.state.messages}/>
-        <RoomList />
+        <RoomList rooms={[...this.state.joinableRooms, ...this.state.joinedRooms]}/>
         <SendMessageForm sendMessage={this.sendMessage} />
       </div>
     );
