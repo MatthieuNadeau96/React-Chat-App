@@ -5,7 +5,7 @@
 
 .App {
   display: grid;
-  height: 800px;
+  height: 600px;
   width: 700px;
   max-width: 75%;
   margin: 50px auto;
@@ -26,7 +26,7 @@
 .messageList {
   grid-area: m;
   background-color: white;
-  height: 100%;
+  overflow: scroll;
 }
 
 .message {
