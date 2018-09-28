@@ -1,5 +1,7 @@
 import React from 'react';
 
+import MobileRoomList from '../ChatRooms/MobileRoomList';
+
 const SideDrawer = props => {
   let menuClasses = ['sideDrawer'];
 
@@ -9,7 +11,11 @@ const SideDrawer = props => {
 
   return (
     <div className={menuClasses.join(' ')}>
-      // Room Lists
+      <MobileRoomList
+        roomId={props.id}
+        subscribeToRoom={props.subToRoom}
+        rooms={props.room}
+        />
     </div>
   )
 }

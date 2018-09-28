@@ -6,7 +6,6 @@ import CreateRoomForm from './components/ChatRooms/CreateRoomForm';
 import RoomList from './components/ChatRooms/RoomList';
 import MessageList from './components/Messaging/MessageList';
 import SendMessageForm from './components/Messaging/SendMessageForm';
-
 import NavBar from './components/Navigation/NavBar';
 import Backdrop from './components/Navigation/Backdrop.jsx';
 import ToggleRoomButton from './components/Navigation/ToggleRoomButton';
@@ -113,7 +112,12 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar drawerToggleClickHandler={this.drawerToggleClickHandler}/>
-        <SideDrawer show={this.state.sideDrawerOpen}/>
+        <SideDrawer
+          show={this.state.sideDrawerOpen}
+          id={this.state.roomId}
+          subToRoom={this.subscribeToRoom}
+          room={[...this.state.joinableRooms, ...this.state.joinedRooms]}
+          />
         {backdrop}
         <RoomList
           roomId={this.state.roomId}
@@ -129,3 +133,6 @@ class App extends Component {
 }
 
 export default App;
+
+
+// TODO: close sideDrawer onClick of a room
