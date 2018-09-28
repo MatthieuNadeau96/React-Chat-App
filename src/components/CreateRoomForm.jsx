@@ -19,16 +19,16 @@ class CreateRoomForm extends Component {
 
   render() {
     return (
-      <div className="createRoomForm child">
-        <form onSubmit={this.handleSubmit}>
-          <input
-            onChange={this.handleChange}
-            type="text"
-            placeholder="Newroom"
-            required
-          />
-        </form>
-      </div>
+      <form
+        className="createRoomForm child"
+        onSubmit={this.handleSubmit}>
+        <input
+          onChange={this.handleChange}
+          type="text"
+          placeholder="Create a new room"
+          required
+        />
+      </form>
     );
   }
 
