@@ -162,7 +162,7 @@
   max-width: 300px;
   width: 60%;
   z-index: 200;
-  transform: translateX(-100%);
+  transform: translateX(-110%);
   transition: transform 450ms ease-in-out;
 }
 .sideDrawer.open {
