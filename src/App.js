@@ -6,6 +6,11 @@ import MessageList from './components/MessageList';
 import RoomList from './components/RoomList';
 import SendMessageForm from './components/SendMessageForm';
 
+import Backdrop from './components/Backdrop.jsx';
+import RoomMenu from './components/RoomMenu';
+import ToggleRoomButton from './components/ToggleRoomButton';
+import SideDrawer from './components/SideDrawer';
+
 import { tokenUrl, instanceLocator } from './config';
 
 class App extends Component {
@@ -14,7 +19,8 @@ class App extends Component {
     roomId: null,
     messages: [],
     joinableRooms: [],
-    joinedRooms: []
+    joinedRooms: [],
+    sideDrawerOpen: false
   }
 
   componentDidMount() {
@@ -84,9 +90,38 @@ class App extends Component {
     .catch(err => console.log('error on creatRoom: ', err));
   }
 
+  // Handling mobile view
+
+  drawerToggleClickHandler = (prevState) => {
+    this.setState((prevState) => {
+      return {sideDrawerOpen: !prevState.sideDrawerOpen}
+    })
+  }
+
+  // toggleRoomMenu = () => {
+  //   this.setState((prevState) => {
+  //     return {roomMenuOpen: !prevState.roomMenuOpen}
+  //   })
+  // }
+
+  backdropToggle = () => {
+    this.setState({ roomMenuOpen: false})
+  }
+
   render() {
+    let sideDrawer;
+    let backdrop;
+
+    if (this.state.sideDrawerOpen) {
+      sideDrawer = <SideDrawer/>;
+      backdrop = <Backdrop click={this.drawerToggleClickHandler}/>;
+    }
+
     return (
       <div className="App">
+        <ToggleRoomButton click={this.drawerToggleClickHandler}/>
+        {sideDrawer}
+        {backdrop}
         <RoomList
           roomId={this.state.roomId}
           subscribeToRoom={this.subscribeToRoom}
