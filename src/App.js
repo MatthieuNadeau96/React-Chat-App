@@ -99,12 +99,6 @@ class App extends Component {
     })
   }
 
-  // toggleRoomMenu = () => {
-  //   this.setState((prevState) => {
-  //     return {roomMenuOpen: !prevState.roomMenuOpen}
-  //   })
-  // }
-
   backdropToggle = () => {
     this.setState({ roomMenuOpen: false})
   }
