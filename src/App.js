@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
 import Chatkit from '@pusher/chatkit';
-import CreateRoomForm from './components/CreateRoomForm';
-import MessageList from './components/MessageList';
-import RoomList from './components/RoomList';
-import SendMessageForm from './components/SendMessageForm';
 
-import NavBar from './components/NavBar';
-import Backdrop from './components/Backdrop.jsx';
-import ToggleRoomButton from './components/ToggleRoomButton';
-import SideDrawer from './components/SideDrawer';
+import CreateRoomForm from './components/ChatRooms/CreateRoomForm';
+import RoomList from './components/ChatRooms/RoomList';
+import MessageList from './components/Messaging/MessageList';
+import SendMessageForm from './components/Messaging/SendMessageForm';
+
+import NavBar from './components/Navigation/NavBar';
+import Backdrop from './components/Navigation/Backdrop.jsx';
+import ToggleRoomButton from './components/Navigation/ToggleRoomButton';
+import SideDrawer from './components/Navigation/SideDrawer';
 
 import { tokenUrl, instanceLocator } from './config';
 
