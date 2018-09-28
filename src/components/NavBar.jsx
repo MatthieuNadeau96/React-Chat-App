@@ -7,8 +7,8 @@ const NavBar = props => (
     <ToggleRoomButton click={props.drawerToggleClickHandler}/>
     <ul>
       <li>RoomName</li>
-      <li>Friends</li>
-      <li>Options</li>
+      <li><i className="fas fa-user-friends"></i></li>
+      <li><i className="fas fa-ellipsis-v"></i></li>
     </ul>
   </div>
 );
