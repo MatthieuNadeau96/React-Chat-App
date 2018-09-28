@@ -8,7 +8,6 @@ import SendMessageForm from './components/SendMessageForm';
 
 import NavBar from './components/NavBar';
 import Backdrop from './components/Backdrop.jsx';
-import RoomMenu from './components/RoomMenu';
 import ToggleRoomButton from './components/ToggleRoomButton';
 import SideDrawer from './components/SideDrawer';
 
