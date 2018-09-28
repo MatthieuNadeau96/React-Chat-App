@@ -80,7 +80,7 @@
   height: 100%;
 }
 .room-title {
-  color: #fff;
+  color: #ddd;
   font-weight: bold;
   padding: 5px;
   font-size: 20px;
@@ -91,8 +91,12 @@
 }
 .room a {
   text-decoration: none;
+  color: #bbb;
   font-weight: bold;
-  color: #ddd;
+}
+
+.active a {
+  color: #fff;
 }
 
 
