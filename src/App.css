@@ -25,7 +25,8 @@
 .messageList {
   grid-area: m;
   background-color: white;
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .message {
@@ -60,7 +61,7 @@
 
 .createRoomForm input {
   height: 100%;
-  /* width: 100%; */
+  width: 100%;
   border: none;
   padding-left: 10px;
   font-size: 1.2em;
@@ -73,7 +74,7 @@
 
 .sendMessageForm {
   grid-area: f;
-  background-color: lightgrey;
+  background-color: #f4f4f4;
   padding: 0;
 }
 
@@ -87,6 +88,10 @@
   border: none;
   padding-left: 10px;
   font-size: 1.2em;
+  background: #eee;
+}
+.sendMessageForm input::placeholder{
+
 }
 .sendMessageForm input:focus {
   outline: none;
