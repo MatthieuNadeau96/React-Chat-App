@@ -110,18 +110,16 @@ class App extends Component {
   }
 
   render() {
-    let sideDrawer;
     let backdrop;
 
     if (this.state.sideDrawerOpen) {
-      sideDrawer = <SideDrawer/>;
       backdrop = <Backdrop click={this.drawerToggleClickHandler}/>;
     }
 
     return (
       <div className="App">
         <NavBar drawerToggleClickHandler={this.drawerToggleClickHandler}/>
-        {sideDrawer}
+        <SideDrawer show={this.state.sideDrawerOpen}/>
         {backdrop}
         <RoomList
           roomId={this.state.roomId}
