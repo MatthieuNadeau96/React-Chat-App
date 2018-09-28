@@ -6,6 +6,7 @@ import MessageList from './components/MessageList';
 import RoomList from './components/RoomList';
 import SendMessageForm from './components/SendMessageForm';
 
+import NavBar from './components/NavBar';
 import Backdrop from './components/Backdrop.jsx';
 import RoomMenu from './components/RoomMenu';
 import ToggleRoomButton from './components/ToggleRoomButton';
@@ -119,7 +120,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <ToggleRoomButton click={this.drawerToggleClickHandler}/>
+        <NavBar drawerToggleClickHandler={this.drawerToggleClickHandler}/>
         {sideDrawer}
         {backdrop}
         <RoomList
