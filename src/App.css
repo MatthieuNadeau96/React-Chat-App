@@ -24,6 +24,7 @@
   margin: 50px auto;
   border: 1px solid var(--white-color);
   border-radius: 4px;
+  box-shadow: 0px 6px 12px rgba(0,0,0,0.02);
   grid-template-columns: 1fr 3fr;
   grid-template-rows: auto 100px;
   grid-template-areas:
@@ -93,6 +94,7 @@
 .sendMessageForm {
   grid-area: f;
   padding: 0;
+  box-shadow: 0px -6px 12px rgba(0,0,0,0.025);
 }
 
 .sendMessageForm form {
@@ -107,7 +109,6 @@
   font-size: 1.2em;
   background: var(--white-color);
   color: var(--primary-font-color);
-  border-top: 1px solid #ddd;
 }
 .sendMessageForm input::placeholder{
   color: var(--primary-font-color);
@@ -120,6 +121,8 @@
   grid-area: r;
   background-color: var(--main-color);
   height: 100%;
+  z-index: 200;
+  box-shadow: 6px 0px 12px rgba(0,0,0,0.025);
 }
 .room-title {
   color: var(--white-color);
@@ -181,7 +184,7 @@
 .sideDrawer {
   height: 100%;
   background-color: var(--white-color);
-  box-shadow: 2px 0px 5px rgba(0,0,0,0.5);
+  box-shadow: 2px 6px 12px rgba(0,0,0,0.15);
   position: fixed;
   top: 0;
   left: 0;
