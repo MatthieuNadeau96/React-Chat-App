@@ -16,6 +16,7 @@ const SideDrawer = props => {
         roomId={props.id}
         subscribeToRoom={props.subToRoom}
         rooms={props.room}
+        clicked={props.clicked}
         />
       <MobileCreateRoomForm createRoom={props.createRoom}/>
     </div>

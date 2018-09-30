@@ -10,9 +10,14 @@ class MobileRoomList extends Component {
         {orderedRooms.map(room => {
           const active = this.props.roomId === room.id ? "active" : "";
           return (
-            <li key={room.id} className={"room " + active}>
+            <li
+              key={room.id}
+              className={"room " + active}
+              onClick={this.props.clicked}>
               <a
-                onClick={() => this.props.subscribeToRoom(room.id)}
+                onClick={() => {
+                  this.props.subscribeToRoom(room.id);
+                }}
                 href="#"># {room.name}
               </a>
             </li>

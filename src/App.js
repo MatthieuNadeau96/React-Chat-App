@@ -117,6 +117,7 @@ class App extends Component {
           subToRoom={this.subscribeToRoom}
           room={[...this.state.joinableRooms, ...this.state.joinedRooms]}
           createRoom={this.createRoom}
+          clicked={this.drawerToggleClickHandler}
           />
         {backdrop}
         <RoomList
