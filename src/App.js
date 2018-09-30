@@ -67,7 +67,8 @@ class App extends Component {
     })
     .then(room => {
       this.setState({
-        roomId: room.id
+        roomId: room.id,
+        roomName: room.name
       })
       this.getRooms()
     })
@@ -110,7 +111,10 @@ class App extends Component {
 
     return (
       <div className="App">
-        <NavBar drawerToggleClickHandler={this.drawerToggleClickHandler}/>
+        <NavBar
+          drawerToggleClickHandler={this.drawerToggleClickHandler}
+          roomName={this.state.roomName}
+          />
         <SideDrawer
           show={this.state.sideDrawerOpen}
           id={this.state.roomId}

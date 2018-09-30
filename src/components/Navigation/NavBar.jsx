@@ -6,7 +6,7 @@ const NavBar = props => (
   <div className="navBar">
     <ToggleRoomButton click={props.drawerToggleClickHandler}/>
     <ul>
-      <li>RoomName</li>
+      <li>{props.roomName}</li>
       <li><i className="fas fa-user-friends"></i></li>
       <li><i className="fas fa-ellipsis-v"></i></li>
     </ul>
