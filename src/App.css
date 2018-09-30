@@ -240,11 +240,11 @@
 
 @media (max-width: 750px) {
   .App {
-    grid-template-rows: 50px auto 100px;
+    grid-template-rows: 50px 1fr 100px;
     grid-template-areas:
     "b b b b b b"
     "m m m m m m"
-    "n f f f f f"
+    "f f f f f f"
   }
 
   .roomList {
@@ -259,5 +259,9 @@
     grid-area: b;
     height: 100%;
     padding: 0 5px;
+  }
+
+  .createRoomForm input {
+    display: none;
   }
 }

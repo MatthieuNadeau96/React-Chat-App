@@ -116,6 +116,7 @@ class App extends Component {
           id={this.state.roomId}
           subToRoom={this.subscribeToRoom}
           room={[...this.state.joinableRooms, ...this.state.joinedRooms]}
+          createRoom={this.createRoom}
           />
         {backdrop}
         <RoomList

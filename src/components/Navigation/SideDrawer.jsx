@@ -1,6 +1,7 @@
 import React from 'react';
 
 import MobileRoomList from '../ChatRooms/MobileRoomList';
+import MobileCreateRoomForm from '../ChatRooms/MobileCreateRoomForm';
 
 const SideDrawer = props => {
   let menuClasses = ['sideDrawer'];
@@ -16,6 +17,7 @@ const SideDrawer = props => {
         subscribeToRoom={props.subToRoom}
         rooms={props.room}
         />
+      <MobileCreateRoomForm createRoom={props.createRoom}/>
     </div>
   )
 }
