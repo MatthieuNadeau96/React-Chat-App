@@ -36,6 +36,8 @@
   padding: 10px;
 }
 
+                          /* MESSAGE */
+
 .messageList {
   grid-area: m;
   background-color: var(--white-color);
@@ -61,36 +63,6 @@
   border-radius: 10px;
   padding: 10px;
 }
-
-
-
-.createRoomForm {
-  grid-area: n;
-  height: 100%;
-  padding: 0;
-  z-index: 200;
-}
-
-.createRoomForm form {
-  height: 100%;
-}
-
-.createRoomForm input {
-  background-color: var(--white-color);
-  height: 100%;
-  width: 100%;
-  border: none;
-  padding-left: 10px;
-  font-size: 1.2em;
-}
-.createRoomForm input::placeholder {
-  color: var(--primary-font-color);
-}
-
-.createRoomForm input:focus {
-  outline: none;
-}
-
 
 .sendMessageForm {
   grid-area: f;
@@ -120,6 +92,36 @@
 .sendMessageForm input:focus {
   outline: none;
 }
+
+                              /* ROOMS */
+
+.createRoomForm {
+  grid-area: n;
+  height: 100%;
+  padding: 0;
+  z-index: 200;
+}
+
+.createRoomForm form {
+  height: 100%;
+}
+
+.createRoomForm input {
+  background-color: var(--white-color);
+  height: 100%;
+  width: 100%;
+  border: none;
+  padding-left: 10px;
+  font-size: 1.2em;
+}
+.createRoomForm input::placeholder {
+  color: var(--primary-font-color);
+}
+
+.createRoomForm input:focus {
+  outline: none;
+}
+
 
 .roomList {
   grid-area: r;
