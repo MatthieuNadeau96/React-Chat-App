@@ -123,7 +123,7 @@
 
 .roomList {
   grid-area: r;
-  background: linear-gradient(90deg, var(--main-color) 56%, rgba(115,115,251,1) 100%);
+  background: linear-gradient(90deg, var(--main-color)  52%, rgba(94,94,208,1) 95%);
   height: 100%;
   z-index: 200;
   box-shadow: 3px 0px 6px rgba(0,0,0,0.026), 4px 0px 8px rgba(0,0,0,0.043);
