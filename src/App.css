@@ -40,7 +40,7 @@
 
 .messageList {
   grid-area: m;
-  background-color: var(--white-color);
+  background: linear-gradient(90deg, rgba(241,241,241,1) 0%, rgba(255,255,255,1) 5%);
   overflow-x: hidden;
   overflow-y: auto;
 }
