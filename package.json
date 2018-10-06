@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "@pusher/chatkit": "^0.7.17",
+    "@tippy.js/react": "^1.0.0",
     "npm": "^6.4.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
