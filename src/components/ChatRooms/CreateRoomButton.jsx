@@ -3,8 +3,12 @@ import Tippy from '@tippy.js/react';
 import 'tippy.js/dist/tippy.css';
 
 const RegularTooltip = () => (
-  <Tippy content="Hello">
-    <button>My button</button>
+  <Tippy
+    content="Create a New Room"
+    arrow="true"
+    animation="scale"
+    inertia="true">
+    <button>+</button>
   </Tippy>
 )
 
