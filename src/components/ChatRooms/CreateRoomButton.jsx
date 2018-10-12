@@ -15,9 +15,10 @@ const RegularTooltip = () => (
 class CreateRoomButton extends Component {
 
   render() {
+    var content = this.props.createRoomButtonClicked ? "x" : "+"
     return (
       <div className="createRoomButton">
-        <button onClick={this.props.clicked}> + </button>
+        <button onClick={this.props.clicked}> {content} </button>
       </div>
     );
   }
