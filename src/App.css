@@ -75,7 +75,7 @@
   height: 100%;
 }
 
-.sendMessageForm input { 
+.sendMessageForm input {
   height: 100%;
   width: 100%;
   border: none;
@@ -123,6 +123,13 @@
   outline: none;
 }
 
+.hide {
+  display: none;
+}
+
+.createRoomButton {
+  width: 100%;
+}
 
 .roomList {
   grid-area: r;

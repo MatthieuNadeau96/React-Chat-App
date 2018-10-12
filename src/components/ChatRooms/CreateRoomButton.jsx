@@ -11,13 +11,13 @@ const RegularTooltip = () => (
     <button>+</button>
   </Tippy>
 )
-
+// removed tippy for now
 class CreateRoomButton extends Component {
 
   render() {
     return (
-      <div>
-        <RegularTooltip/>
+      <div className="createRoomButton">
+        <button onClick={this.props.clicked}> + </button>
       </div>
     );
   }

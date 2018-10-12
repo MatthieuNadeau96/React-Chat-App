@@ -18,9 +18,10 @@ class CreateRoomForm extends Component {
   }
 
   render() {
+    var className = this.props.createRoomButtonClicked ? "createRoomForm child show" : "createRoomForm hide"
     return (
       <form
-        className="createRoomForm child"
+        className={className}
         onSubmit={this.handleSubmit}>
         <input
           onChange={this.handleChange}

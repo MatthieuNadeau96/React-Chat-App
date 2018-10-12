@@ -5,6 +5,14 @@ import CreateRoomButton from './CreateRoomButton';
 
 class RoomList extends Component {
 
+  state = {
+    createRoomButtonClicked: false
+  }
+
+  createRoomHandler = () => {
+    this.setState({createRoomButtonClicked: !this.state.createRoomButtonClicked})
+  }
+
   render() {
     const orderedRooms = [...this.props.rooms].sort((a, b) => a.id - b.id)
     return (
@@ -23,8 +31,8 @@ class RoomList extends Component {
             )
           })}
         </div>
-        <CreateRoomButton />
-        <CreateRoomForm createRoom={this.createRoom}/>
+        <CreateRoomButton clicked={this.createRoomHandler}/>
+        <CreateRoomForm createRoom={this.createRoom} createRoomButtonClicked={this.state.createRoomButtonClicked}/>
       </div>
     );
   }
