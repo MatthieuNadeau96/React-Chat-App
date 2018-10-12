@@ -31,8 +31,10 @@ class RoomList extends Component {
             )
           })}
         </div>
-        <CreateRoomButton clicked={this.createRoomHandler}/>
-        <CreateRoomForm createRoom={this.createRoom} createRoomButtonClicked={this.state.createRoomButtonClicked}/>
+        <div className="createRoom">
+          <CreateRoomForm createRoom={this.createRoom} createRoomButtonClicked={this.state.createRoomButtonClicked}/>
+          <CreateRoomButton clicked={this.createRoomHandler}/>
+        </div>
       </div>
     );
   }

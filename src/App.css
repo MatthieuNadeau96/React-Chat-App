@@ -102,6 +102,13 @@
   z-index: 200;
 }
 
+.createRoom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
 .createRoomForm form {
   height: 100%;
 }
@@ -127,6 +134,8 @@
 }
 
 .createRoomButton {
+  display: flex;
+  justify-content: center;
   width: 100%;
 }
 
