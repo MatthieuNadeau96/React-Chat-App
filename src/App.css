@@ -75,7 +75,7 @@
   height: 100%;
 }
 
-.sendMessageForm input {  /* TODO: Change size for mobile */
+.sendMessageForm input { 
   height: 100%;
   width: 100%;
   border: none;
