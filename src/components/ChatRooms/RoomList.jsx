@@ -23,6 +23,7 @@ class RoomList extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     this.props.createRoom(this.state.roomName);
+    document.getElementById("createRoomForm").reset();
     this.setState({
       createRoomButtonClicked: !this.state.createRoomButtonClicked
     })

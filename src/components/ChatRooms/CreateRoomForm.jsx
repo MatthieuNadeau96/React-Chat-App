@@ -6,6 +6,7 @@ class CreateRoomForm extends Component {
     var className = this.props.createRoomButtonClicked ? "createRoomForm child show" : "createRoomForm hide"
     return (
       <form
+        id="createRoomForm"
         className={className}
         onSubmit={this.props.handleSubmit}>
         <input
