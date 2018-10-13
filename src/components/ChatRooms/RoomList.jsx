@@ -6,11 +6,26 @@ import CreateRoomButton from './CreateRoomButton';
 class RoomList extends Component {
 
   state = {
-    createRoomButtonClicked: false
+    createRoomButtonClicked: false,
+    roomName: ''
   }
 
   createRoomHandler = () => {
     this.setState({createRoomButtonClicked: !this.state.createRoomButtonClicked})
+  }
+
+  handleChange = (e) => {
+    this.setState({
+      roomName: e.target.value
+    })
+  }
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+    this.props.createRoom(this.state.roomName);
+    this.setState({
+      createRoomButtonClicked: !this.state.createRoomButtonClicked
+    })
   }
 
   render() {
@@ -32,8 +47,16 @@ class RoomList extends Component {
           })}
         </div>
         <div className="createRoom">
-          <CreateRoomForm createRoom={this.props.createRoom} createRoomButtonClicked={this.state.createRoomButtonClicked}/>
-          <CreateRoomButton clicked={this.createRoomHandler} createRoomButtonClicked={this.state.createRoomButtonClicked}/>
+          <CreateRoomForm
+            createRoom={this.props.createRoom}
+            createRoomButtonClicked={this.state.createRoomButtonClicked}
+            handleChange={this.handleChange}
+            handleSubmit={this.handleSubmit}
+          />
+          <CreateRoomButton
+            clicked={this.createRoomHandler}
+            createRoomButtonClicked={this.state.createRoomButtonClicked}
+          />
         </div>
       </div>
     );
