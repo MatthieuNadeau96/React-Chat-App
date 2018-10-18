@@ -209,12 +209,25 @@
 .navBar ul {
   margin: 0;
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.navBar .roomTitle {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
 }
 
 .navBar li {
   display: inline-block;
   padding: 5px 10px;
 }
+
 .navBar i {
   cursor: pointer;
 }
