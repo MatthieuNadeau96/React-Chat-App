@@ -6,6 +6,9 @@ class MobileRoomList extends Component {
     const orderedRooms = [...this.props.rooms].sort((a, b) => a.id - b.id)
     return (
       <div className="mobileRoomList child">
+        <div className="mobileFriends">
+          <i className="fas fa-user-friends"></i>
+        </div>
         <div className="room-title">Your Rooms:</div>
         {orderedRooms.map(room => {
           const active = this.props.roomId === room.id ? "active" : "";

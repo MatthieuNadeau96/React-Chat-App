@@ -34,6 +34,10 @@ class RoomList extends Component {
     return (
       <div className="roomList child">
         <div className="roomList-list">
+          <div className="desktopNavBar">
+            <i className="fas fa-user-friends"></i>
+            <i className="fas fa-ellipsis-v"></i>
+          </div>
           <div className="room-title">Your Rooms:</div>
           {orderedRooms.map(room => {
             const active = this.props.roomId === room.id ? "active" : "";

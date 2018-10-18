@@ -192,6 +192,18 @@
   color: var(--white-color);
 }
 
+.desktopNavBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3px;
+  margin-bottom: 10px;
+  color: var(--white-color);
+}
+.desktopNavBar i {
+  cursor: pointer;
+}
+
                           /* MOBILE NAVIGATION */
 
 .navBar {
@@ -286,6 +298,18 @@
 
 .mobileRoomList .active a {
   /* color: var(--primary-font-color); */
+}
+
+.mobileRoomList .mobileFriends {
+  color: var(--main-color);
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 3px;
+  margin-bottom: 3px;
+}
+.mobileFriends i {
+  cursor: pointer;
 }
 
 .mobileCreateRoomForm  {
