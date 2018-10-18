@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Tippy from '@tippy.js/react';
 import 'tippy.js/dist/tippy.css';
-import AnimateOnChange from 'react-animate-on-change'
 
 const RegularTooltip = () => (
   <Tippy
