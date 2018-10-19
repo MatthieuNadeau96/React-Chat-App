@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from '@material-ui/core/Button';
 
 import CreateRoomForm from './CreateRoomForm';
 import CreateRoomButton from './CreateRoomButton';
@@ -29,14 +30,20 @@ class RoomList extends Component {
     })
   }
 
+
+
   render() {
     const orderedRooms = [...this.props.rooms].sort((a, b) => a.id - b.id)
     return (
       <div className="roomList child">
         <div className="roomList-list">
           <div className="desktopNavBar">
-            <i className="fas fa-user-friends"></i>
-            <i className="fas fa-ellipsis-v"></i>
+            <Button style={friends}>
+              <i className="fas fa-user-friends"></i>
+            </Button>
+            <Button style={options}>
+              <i className="fas fa-ellipsis-v"></i>
+            </Button>
           </div>
           <div className="room-title">Your Rooms:</div>
           {orderedRooms.map(room => {
@@ -67,6 +74,23 @@ class RoomList extends Component {
     );
   }
 
+}
+
+const friends = {
+  display: 'block',
+  background: "inherit",
+  padding: 0,
+  height: 40,
+  width: 40,
+  borderRadius: "50%"
+}
+const options = {
+  display: 'block',
+  background: "inherit",
+  padding: 0,
+  height: 40,
+  width: 40,
+  borderRadius: "50%"
 }
 
 export default RoomList;

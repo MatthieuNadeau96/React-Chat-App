@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^3.2.2",
     "@pusher/chatkit": "^0.7.17",
     "@tippy.js/react": "^1.0.0",
     "npm": "^6.4.1",
