@@ -49,12 +49,18 @@ class RoomList extends Component {
           {orderedRooms.map(room => {
             const active = this.props.roomId === room.id ? "active" : "";
             return (
-              <li key={room.id} className={"room " + active}>
-                <a
-                  onClick={() => this.props.subscribeToRoom(room.id)}
-                  href="#"># {room.name}
-                </a>
-              </li>
+              <Button
+                style={rooms}
+                onClick={() => this.props.subscribeToRoom(room.id)}>
+                <li
+                  key={room.id}
+                  className={"room " + active}
+                  >
+                  <a href="#">
+                    # {room.name}
+                  </a>
+                </li>
+              </Button>
             )
           })}
         </div>
@@ -91,6 +97,10 @@ const options = {
   height: 40,
   width: 40,
   borderRadius: "50%"
+}
+const rooms = {
+  width: '100%',
+  borderRadius: 10
 }
 
 export default RoomList;

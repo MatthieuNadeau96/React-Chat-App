@@ -180,7 +180,9 @@
 }
 .room {
   list-style: none;
-  padding: 5px;
+  padding: 8px 5px;
+  text-align: left;
+  border-radius: 50%;
 }
 .room a {
   text-decoration: none;
@@ -205,9 +207,16 @@
   cursor: pointer;
 }
 
+/* Overide Material-UI/Core defaults */
 .MuiButton-root-1  {
+  padding: 0 !important;
   min-width: 40px !important;
   min-height: 40px !important;
+  margin: 0 !important;
+}
+.MuiButtonBase-root-27 {
+  margin: 0 !important;
+  display: inherit !important;
 }
 
                           /* MOBILE NAVIGATION */
