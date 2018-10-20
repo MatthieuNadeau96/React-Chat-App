@@ -45,7 +45,7 @@ class RoomList extends Component {
               <i className="fas fa-ellipsis-v"></i>
             </Button>
           </div>
-          <div className="room-title">Your Rooms:</div>
+          <div className="room-title">Your Rooms</div>
           {orderedRooms.map(room => {
             const active = this.props.roomId === room.id ? "active" : "";
             return (
@@ -99,6 +99,7 @@ const options = {
   borderRadius: "50%"
 }
 const rooms = {
+  textAlign: 'right',
   width: '100%',
   borderRadius: 10
 }
