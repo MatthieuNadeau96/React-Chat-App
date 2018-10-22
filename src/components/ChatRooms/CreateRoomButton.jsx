@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Tippy from '@tippy.js/react';
 import 'tippy.js/dist/tippy.css';
+import Button from '@material-ui/core/Button';
 
 const RegularTooltip = () => (
   <Tippy
@@ -15,14 +16,24 @@ const RegularTooltip = () => (
 class CreateRoomButton extends Component {
 
   render() {
-    var content = this.props.createRoomButtonClicked ? "x" : "+"
+    var content = this.props.createRoomButtonClicked ? <i class="fas fa-times"/> : <i class="fas fa-plus"/>
     return (
       <div className="createRoomButton">
-        <button onClick={this.props.clicked}> {content} </button>
+        <Button style={createRoom} onClick={this.props.clicked}>
+          {content}
+        </Button>
       </div>
     );
   }
 
+}
+
+const createRoom = {
+  display: 'block',
+  background: "#969CB6",  //primary font color
+  padding: 0,
+  height: 40,
+  width: "100%"
 }
 
 export default CreateRoomButton;
