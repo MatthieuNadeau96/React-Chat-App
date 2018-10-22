@@ -99,7 +99,7 @@ const options = {
   borderRadius: "50%"
 }
 const rooms = {
-  textAlign: 'right',
+  textAlign: 'left',
   width: '100%',
   borderRadius: 10
 }
