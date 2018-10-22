@@ -30,10 +30,13 @@ class CreateRoomButton extends Component {
 
 const createRoom = {
   display: 'block',
-  background: "#969CB6",  //primary font color
+  background: "inherit",  //primary font color
+  boxShadow: 'none',
+  textShadow: '0px 3px 6px rgba(0,0,0,0.5)',
   padding: 0,
-  height: 40,
-  width: "100%"
+  height: 65,
+  width: 65,
+  borderRadius: 50
 }
 
 export default CreateRoomButton;
