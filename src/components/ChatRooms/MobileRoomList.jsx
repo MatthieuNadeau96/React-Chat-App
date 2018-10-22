@@ -9,7 +9,7 @@ class MobileRoomList extends Component {
         <div className="mobileFriends">
           <i className="fas fa-user-friends"></i>
         </div>
-        <div className="room-title">Your Rooms:</div>
+        <div className="room-title">Your Rooms</div>
         {orderedRooms.map(room => {
           const active = this.props.roomId === room.id ? "active" : "";
           return (
