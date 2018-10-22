@@ -167,7 +167,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: linear-gradient(90deg, var(--main-color)  52%, rgba(94,94,208,1) 95%);
+  background: var(--main-color);
+  /* background: linear-gradient(90deg, var(--main-color)  52%, rgba(94,94,208,1) 95%); */
   height: 100%;
   z-index: 200;
   box-shadow: 3px 0px 6px rgba(0,0,0,0.026), 4px 0px 8px rgba(0,0,0,0.043);
@@ -185,6 +186,7 @@
   text-align: left;
   border-radius: 50%;
 }
+
 .room a {
   text-decoration: none;
   color: var(--primary-font-color);
