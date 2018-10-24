@@ -52,7 +52,6 @@ class RoomList extends Component {
               <Button
                 key={room.id}
                 style={rooms}
-                inputStyle={{textAlign:'left'}}
                 onClick={() => this.props.subscribeToRoom(room.id)}>
                 <li
                   className={"room " + active}
