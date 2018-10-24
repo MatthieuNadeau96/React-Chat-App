@@ -16,7 +16,7 @@ const RegularTooltip = () => (
 class CreateRoomButton extends Component {
 
   render() {
-    var content = this.props.createRoomButtonClicked ? <i class="fas fa-times"/> : <i class="fas fa-plus"/>
+    var content = this.props.createRoomButtonClicked ? <i className="fas fa-times"/> : <i className="fas fa-plus"/>
     return (
       <div className="createRoomButton">
         <Button style={createRoom} onClick={this.props.clicked}>

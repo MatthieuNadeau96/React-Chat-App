@@ -184,7 +184,7 @@
 .room {
   list-style: none;
   padding: 8px 5px;
-  text-align: left;
+  /* text-align: left; */
   border-radius: 50%;
 }
 

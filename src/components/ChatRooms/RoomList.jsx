@@ -50,10 +50,11 @@ class RoomList extends Component {
             const active = this.props.roomId === room.id ? "active" : "";
             return (
               <Button
+                key={room.id}
                 style={rooms}
+                inputStyle={{textAlign:'left'}}
                 onClick={() => this.props.subscribeToRoom(room.id)}>
                 <li
-                  key={room.id}
                   className={"room " + active}
                   >
                   <a href="#">
@@ -100,6 +101,7 @@ const options = {
 }
 const rooms = {
   textAlign: 'left',
+  margin: 'auto',
   width: '100%',
   borderRadius: 10
 }
