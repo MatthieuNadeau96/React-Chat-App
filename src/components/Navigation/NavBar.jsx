@@ -1,15 +1,38 @@
 import React from 'react';
+import Button from '@material-ui/core/Button';
 
 import ToggleRoomButton from './ToggleRoomButton';
 
 const NavBar = props => (
   <div className="navBar">
-    <ToggleRoomButton click={props.drawerToggleClickHandler}/>
+    <Button
+      style={toggleRoom}
+      onClick={props.drawerToggleClickHandler}>
+      <i className="fas fa-bars"></i>
+    </Button>
     <div className="roomTitle">{props.roomName}</div>
-    <ul>
-      <li><i className="fas fa-ellipsis-v"></i></li>
-    </ul>
+    <Button style={options}><i className="fas fa-ellipsis-v"></i></Button>
   </div>
 );
+
+const options = {
+  display: 'block',
+  background: "inherit",
+  color: "white",
+  padding: 0,
+  height: 40,
+  width: 40,
+  borderRadius: "50%"
+}
+
+const toggleRoom = {
+  display: 'block',
+  background: "inherit",
+  color: "white",
+  padding: 0,
+  height: 40,
+  width: 40,
+  borderRadius: "50%"
+}
 
 export default NavBar;
