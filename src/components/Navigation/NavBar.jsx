@@ -1,8 +1,6 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 
-import ToggleRoomButton from './ToggleRoomButton';
-
 const NavBar = props => (
   <div className="navBar">
     <Button
