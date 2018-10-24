@@ -99,6 +99,7 @@ const options = {
   borderRadius: "50%"
 }
 const rooms = {
+  color: '#969CB6',
   textAlign: 'left',
   margin: 'auto',
   width: '100%',
