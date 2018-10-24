@@ -53,9 +53,7 @@ class RoomList extends Component {
                 key={room.id}
                 style={rooms}
                 onClick={() => this.props.subscribeToRoom(room.id)}>
-                <li
-                  className={"room " + active}
-                  >
+                <li className={"room " + active}>
                   <a href="#">
                     # {room.name}
                   </a>
@@ -100,8 +98,6 @@ const options = {
 }
 const rooms = {
   color: '#969CB6',
-  textAlign: 'left',
-  margin: 'auto',
   width: '100%',
   borderRadius: 10
 }
