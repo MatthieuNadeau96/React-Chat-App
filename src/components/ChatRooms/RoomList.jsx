@@ -4,6 +4,33 @@ import Button from '@material-ui/core/Button';
 import CreateRoomForm from './CreateRoomForm';
 import CreateRoomButton from './CreateRoomButton';
 
+
+const friends = {
+  display: 'block',
+  color: '#969CB6',
+  background: "inherit",
+  padding: 0,
+  height: 40,
+  width: 40,
+  borderRadius: "50%"
+}
+const options = {
+  display: 'block',
+  color: '#969CB6',
+  background: "inherit",
+  padding: 0,
+  height: 40,
+  width: 40,
+  borderRadius: "50%"
+}
+const rooms = {
+  textAlign: 'left',
+  color: '#969CB6',
+  width: '100%',
+  borderRadius: 10
+}
+
+
 class RoomList extends Component {
 
   state = {
@@ -78,28 +105,6 @@ class RoomList extends Component {
     );
   }
 
-}
-
-const friends = {
-  display: 'block',
-  background: "inherit",
-  padding: 0,
-  height: 40,
-  width: 40,
-  borderRadius: "50%"
-}
-const options = {
-  display: 'block',
-  background: "inherit",
-  padding: 0,
-  height: 40,
-  width: 40,
-  borderRadius: "50%"
-}
-const rooms = {
-  color: '#969CB6',
-  width: '100%',
-  borderRadius: 10
 }
 
 export default RoomList;
