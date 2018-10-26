@@ -353,6 +353,26 @@
 }
 
 
+                            /* OPTIONS SECTION */
+
+
+.optionsMenu {
+  color: yellow;
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  height: 30%;
+  width: 30%;
+  z-index: 240;
+}
+.optionsOpen {
+  background-color: grey;
+}
+
+
+
                               /* MEDIA QUERIES */
 
 

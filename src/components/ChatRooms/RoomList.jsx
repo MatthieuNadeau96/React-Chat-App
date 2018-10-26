@@ -68,7 +68,9 @@ class RoomList extends Component {
             <Button style={friends}>
               <i className="fas fa-user-friends"></i>
             </Button>
-            <Button style={options}>
+            <Button
+              style={options} 
+              onClick={this.props.optionsToggleClickHandler}>
               <i className="fas fa-ellipsis-v"></i>
             </Button>
           </div>

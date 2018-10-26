@@ -9,7 +9,11 @@ const NavBar = props => (
       <i className="fas fa-bars"></i>
     </Button>
     <div className="roomTitle">{props.roomName}</div>
-    <Button style={options}><i className="fas fa-ellipsis-v"></i></Button>
+    <Button
+      style={options}
+      onClick={props.optionsToggleClickHandler}>
+      <i className="fas fa-ellipsis-v"/>
+    </Button>
   </div>
 );
 

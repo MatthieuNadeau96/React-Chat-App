@@ -9,6 +9,7 @@ import SendMessageForm from './components/Messaging/SendMessageForm';
 import NavBar from './components/Navigation/NavBar';
 import Backdrop from './components/Navigation/Backdrop.jsx';
 import SideDrawer from './components/Navigation/SideDrawer';
+import OptionsMenu from './components/Options/OptionsMenu';
 
 import { tokenUrl, instanceLocator } from './config';
 
@@ -19,7 +20,8 @@ class App extends Component {
     messages: [],
     joinableRooms: [],
     joinedRooms: [],
-    sideDrawerOpen: false
+    sideDrawerOpen: false,
+    optionsMenuOpen: false
   }
 
   componentDidMount() {
@@ -102,18 +104,29 @@ class App extends Component {
     this.setState({ roomMenuOpen: false})
   }
 
+  // Handling Options Menu
+
+  optionsToggleClickHandler = (prevState) => {
+    const currentState = this.state.optionsToggleClickHandler;
+    this.setState({ optionsToggleClickHandler: !currentState});
+  }
+
   render() {
     let backdrop;
 
     if (this.state.sideDrawerOpen) {
       backdrop = <Backdrop click={this.drawerToggleClickHandler}/>;
     }
+    // if (this.state.optionsMenuOpen) {
+    //   backdrop = <Backdrop click={this.optionsMenuOpen}/>;
+    // }
 
     return (
       <div className="App">
         <NavBar
           drawerToggleClickHandler={this.drawerToggleClickHandler}
           roomName={this.state.roomName}
+          optionsToggleClickHandler={this.optionsToggleClickHandler}
           />
         <SideDrawer
           show={this.state.sideDrawerOpen}
@@ -129,9 +142,11 @@ class App extends Component {
           subscribeToRoom={this.subscribeToRoom}
           rooms={[...this.state.joinableRooms, ...this.state.joinedRooms]}
           createRoom={this.createRoom}
+          optionsToggleClickHandler={this.optionsToggleClickHandler}
           />
         <MessageList messages={this.state.messages}/>
         <SendMessageForm sendMessage={this.sendMessage} />
+        <OptionsMenu open={this.state.optionsMenuOpen}/>
       </div>
     );
   }
