@@ -321,11 +321,11 @@
 
 .mobileRoomList .mobileFriends {
   color: var(--main-color);
-  display:flex;
+  /* display:flex;
   flex-direction: row;
-  justify-content: flex-end;
-  padding: 3px;
-  margin-bottom: 3px;
+  justify-content: flex-end; */
+  /* padding: 3px;
+  margin-bottom: 3px; */
 }
 .mobileFriends i {
   cursor: pointer;
@@ -405,6 +405,6 @@
   min-width: 0 !important;
 }
 
-.jss2 {
+.roomList-list .jss2 {
   justify-content: flex-start !important;
 }
