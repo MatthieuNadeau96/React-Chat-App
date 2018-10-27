@@ -359,6 +359,7 @@
 .optionsMenu {
   color: var(--primary-font-color);
   background: var(--white-color);
+  border-radius: 5px;
   /* font-size: 50px; */
   display: flex;
   flex-direction: column;
@@ -371,13 +372,20 @@
   margin: 200px auto;
   left: 0;
   right: 0;
-
+  padding: 10px 20px;
 }
 
 .optionsOpen {
   transform: translateY(0%);
 }
 
+.options {
+}
+.option {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 
                               /* MEDIA QUERIES */

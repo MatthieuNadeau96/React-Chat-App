@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Options from './Options';
+
 const OptionsMenu = props => {
   let menuClasses = ['optionsMenu'];
 
@@ -9,7 +11,8 @@ const OptionsMenu = props => {
 
   return (
     <div className={menuClasses.join(' ')}>
-      hi
+      <h2 className="optionMenuTitle">Options</h2>
+      <Options />
     </div>
   )
 }
