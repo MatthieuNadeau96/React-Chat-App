@@ -380,12 +380,20 @@
 }
 
 .options {
+  /* padding: 20px 0; */
 }
+
 .option {
+  padding: 10px 0;
+}
+
+.switch-option {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
+.slider-option
 
 
                               /* MEDIA QUERIES */

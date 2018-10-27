@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.2.2",
+    "@material-ui/lab": "^3.0.0-alpha.21",
     "@pusher/chatkit": "^0.7.17",
     "@tippy.js/react": "^1.0.0",
     "npm": "^6.4.1",
