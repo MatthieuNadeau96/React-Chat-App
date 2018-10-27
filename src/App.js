@@ -107,8 +107,9 @@ class App extends Component {
   // Handling Options Menu
 
   optionsToggleClickHandler = (prevState) => {
-    const currentState = this.state.optionsToggleClickHandler;
-    this.setState({ optionsToggleClickHandler: !currentState});
+    this.setState((prevState) => {
+      return {optionsMenuOpen: !prevState.optionsMenuOpen}
+    })
   }
 
   render() {
@@ -117,9 +118,9 @@ class App extends Component {
     if (this.state.sideDrawerOpen) {
       backdrop = <Backdrop click={this.drawerToggleClickHandler}/>;
     }
-    // if (this.state.optionsMenuOpen) {
-    //   backdrop = <Backdrop click={this.optionsMenuOpen}/>;
-    // }
+    if (this.state.optionsMenuOpen) {
+      backdrop = <Backdrop click={this.optionsToggleClickHandler}/>;
+    }
 
     return (
       <div className="App">
