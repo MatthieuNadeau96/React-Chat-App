@@ -37,6 +37,18 @@ class Options extends Component {
               color="primary"
             />
         </div>
+        <div className="option switch-option">
+          <p>System Notifications</p>
+          <Switch
+              color="primary"
+            />
+        </div>
+        <div className="option switch-option">
+          <p>In-App Notifications</p>
+          <Switch
+              color="primary"
+            />
+        </div>
         <div className="option slider-option">
           <p id="label">Volume</p>
           <Slider
