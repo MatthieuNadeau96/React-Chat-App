@@ -36,7 +36,28 @@
   padding: 10px;
 }
 
+
+/* SCROLLBARS */
+::-webkit-scrollbar {
+    width: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
                           /* MESSAGE */
+
 
 .messageList {
   grid-area: m;
@@ -92,6 +113,7 @@
 .sendMessageForm input:focus {
   outline: none;
 }
+
 
                               /* ROOMS */
 
@@ -223,6 +245,7 @@
   display: inherit !important;
 }
 
+
                           /* MOBILE NAVIGATION */
 
 .navBar {
@@ -353,7 +376,7 @@
 }
 
 
-                            /* OPTIONS SECTION */
+                          /* OPTIONS SECTION */
 
 
 .optionsMenu {
@@ -373,7 +396,7 @@
   left: 0;
   right: 0;
   padding: 10px 20px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .optionsOpen {
@@ -394,7 +417,9 @@
   justify-content: space-between;
 }
 
-.slider-option
+.slider-option {
+  margin-bottom: 10px;
+}
 
 
                               /* MEDIA QUERIES */
