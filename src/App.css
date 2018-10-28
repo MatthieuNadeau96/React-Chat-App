@@ -39,6 +39,7 @@
 
 /* SCROLLBARS */
 ::-webkit-scrollbar {
+    display: none;
     width: 10px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
