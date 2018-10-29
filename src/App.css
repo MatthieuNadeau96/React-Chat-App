@@ -396,7 +396,7 @@
   margin: 200px auto;
   left: 0;
   right: 0;
-  padding: 10px 20px;
+  padding: 10px 10px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
@@ -410,13 +410,17 @@
   transform: translateY(0%);
 }
 
+.backButton {
+  margin-left: 20px !important;
+}
+
 .options {
-  padding: 0 30px;
+  /* padding: 0 10px; */
   overflow-y: scroll;
 }
 
 .option {
-  padding: 10px 0;
+  padding: 10px 30px;
 }
 
 .switch-option {
