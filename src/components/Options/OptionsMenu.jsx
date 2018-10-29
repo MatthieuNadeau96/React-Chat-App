@@ -17,11 +17,12 @@ const OptionsMenu = props => {
           onClick={props.backBtnClicked}
           style={backBtn}
           className="backButton">
-          <i class="material-icons">arrow_back</i>
+          <i className="material-icons">arrow_back</i>
         </Button>
         <h2 className="optionMenuTitle">Options</h2>
           <Button
             className="invisibleBtn">
+            hidden
           </Button>
       </div>
       <Options />

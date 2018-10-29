@@ -4,11 +4,6 @@ import { withStyles } from '@material-ui/core/styles';
 import Switch from '@material-ui/core/Switch';
 import Slider from '@material-ui/lab/Slider';
 
-const styles = {
-  slider: {
-    padding: '2px 0px',
-  },
-}
 
 class Options extends Component {
 
@@ -29,6 +24,7 @@ class Options extends Component {
   };
 
   render() {
+    const { classes } = this.props;
     return (
       <div className="options">
         <div className="option switch-option">
@@ -52,7 +48,7 @@ class Options extends Component {
         <div className="option slider-option">
           <p id="label">Volume</p>
           <Slider
-            className={{ container: styles.slider }}
+            classes={{ container: classes.slider }}
             value={this.state.volumeValue}
             min={0}
             max={100}
@@ -64,7 +60,7 @@ class Options extends Component {
         <div className="option slider-option">
           <p id="label">Microphone Volume</p>
             <Slider
-              className={{ container: styles.slider }}
+              classes={{ container: classes.slider }}
               value={this.state.micValue}
               min={0}
               max={100}
@@ -76,7 +72,7 @@ class Options extends Component {
         <div className="option slider-option">
           <p>Font Size</p>
             <Slider
-              className={{ container: styles.slider }}
+              classes={{ container: classes.slider }}
               value={this.state.fontSizeValue}
               min={1}
               max={3}
@@ -89,6 +85,11 @@ class Options extends Component {
     );
   }
 
+}
+const styles = {
+  slider: {
+    padding: '2px 0px',
+  },
 }
 
 export default withStyles(styles)(Options);
