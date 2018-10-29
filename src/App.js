@@ -147,7 +147,10 @@ class App extends Component {
           />
         <MessageList messages={this.state.messages}/>
         <SendMessageForm sendMessage={this.sendMessage} />
-        <OptionsMenu open={this.state.optionsMenuOpen}/>
+        <OptionsMenu
+          backBtnClicked={this.optionsToggleClickHandler}
+          open={this.state.optionsMenuOpen}
+          />
       </div>
     );
   }
