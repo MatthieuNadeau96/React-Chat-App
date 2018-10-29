@@ -12,9 +12,12 @@ const OptionsMenu = props => {
 
   return (
     <div className={menuClasses.join(' ')}>
-      <Button onClick={props.backBtnClicked} style={backBtn} className="backButton"><i class="material-icons">
-arrow_back
-</i></Button>
+      <Button
+        onClick={props.backBtnClicked}
+        style={backBtn}
+        className="backButton">
+        <i class="material-icons">arrow_back</i>
+      </Button>
       <h2 className="optionMenuTitle">Options</h2>
       <Options />
     </div>
