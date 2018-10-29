@@ -400,10 +400,17 @@
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
+.optionMenuHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 20px 0;
+}
+
 .optionMenuTitle {
   text-transform: uppercase;
   text-align: center;
-  margin: 0 0 20px 0;
+  margin: auto;
 }
 
 .optionsOpen {
@@ -411,7 +418,13 @@
 }
 
 .backButton {
+  float: left;
   margin-left: 20px !important;
+}
+
+.invisibleBtn {
+  margin-right: 20px !important;
+  visibility: hidden;
 }
 
 .options {
