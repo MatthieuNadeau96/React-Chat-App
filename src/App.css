@@ -396,14 +396,14 @@
   margin: 200px auto;
   left: 0;
   right: 0;
-  padding-top: 10px;
+  padding: 10px 20px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .optionMenuTitle {
   text-transform: uppercase;
   text-align: center;
-  padding: 0 20px
+  margin: 0 0 20px 0;
 }
 
 .optionsOpen {
@@ -411,8 +411,8 @@
 }
 
 .options {
+  padding: 0 30px;
   overflow-y: scroll;
-  padding: 0 20px;
 }
 
 .option {
