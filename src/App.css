@@ -442,13 +442,6 @@
   }
 }
 
-@media (max-height: 849px) {
-  .App {
-    margin: 0 auto;
-    height: 100vh;
-  }
-}
-
 @media (max-width: 750px) {
   .App {
     grid-template-rows: 50px 1fr 80px;
@@ -474,6 +467,27 @@
 
   .createRoomForm input {
     display: none;
+  }
+
+  .optionsMenu {
+    margin-top: 20vh;
+    height: 60%;
+    width: 100%;
+  }
+}
+
+@media (max-height: 849px) {
+  .App {
+    margin: 0 auto;
+    height: 100vh;
+  }
+}
+
+@media (max-height: 500px) {
+  .optionsMenu {
+    margin-top: 0;
+    width: 500px;
+    height: 100%;
   }
 }
 
