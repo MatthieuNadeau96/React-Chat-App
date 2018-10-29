@@ -72,6 +72,13 @@
   padding: 5px;
 }
 
+.message-nameDisplay {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .message-username {
   font-size: .8em;
   padding: 5px;
