@@ -1,18 +1,6 @@
 import React, { Component } from 'react';
-import Tippy from '@tippy.js/react';
-import 'tippy.js/dist/tippy.css';
 import Button from '@material-ui/core/Button';
 
-const RegularTooltip = () => (
-  <Tippy
-    content="Create a New Room"
-    arrow="true"
-    animation="scale"
-    inertia="true">
-    <button>+</button>
-  </Tippy>
-)
-// removed tippy for now
 class CreateRoomButton extends Component {
 
   render() {

@@ -69,7 +69,7 @@ class RoomList extends Component {
               <i className="fas fa-user-friends"></i>
             </Button>
             <Button
-              style={options} 
+              style={options}
               onClick={this.props.optionsToggleClickHandler}>
               <i className="fas fa-ellipsis-v"></i>
             </Button>
@@ -83,7 +83,7 @@ class RoomList extends Component {
                 style={rooms}
                 onClick={() => this.props.subscribeToRoom(room.id)}>
                 <li className={"room " + active}>
-                  <a href="#">
+                  <a href="/">
                     # {room.name}
                   </a>
                 </li>

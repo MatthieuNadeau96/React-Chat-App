@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import Chatkit from '@pusher/chatkit';
 
-import CreateRoomForm from './components/ChatRooms/CreateRoomForm';
 import RoomList from './components/ChatRooms/RoomList';
 import MessageList from './components/Messaging/MessageList';
 import SendMessageForm from './components/Messaging/SendMessageForm';

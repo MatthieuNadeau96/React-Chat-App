@@ -35,7 +35,7 @@ class MobileRoomList extends Component {
                 onClick={() => {
                   this.props.subscribeToRoom(room.id);
                 }}
-                href="#"># {room.name}
+                href="/"># {room.name}
               </a>
             </li>
           )
