@@ -19,8 +19,8 @@ class Message extends Component {
 
 const avatar = {
   margin: 6,
-  height: 30,
-  width: 30,
+  height: 40,
+  width: 40,
   fontSize: '1em',
   color: '#fff',
   backgroundColor: '#FF9B9B'
