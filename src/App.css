@@ -421,6 +421,7 @@
 }
 
 .optionMenuHeader {
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -453,6 +454,8 @@
 }
 
 .option {
+  width: 75%;
+  margin: auto;
   padding: 10px 30px;
 }
 
@@ -509,6 +512,10 @@
   .optionsMenu {
     margin-top: 20vh;
     height: 60%;
+    width: 100%;
+  }
+
+  .option {
     width: 100%;
   }
 }
