@@ -30,7 +30,7 @@ class SendMessageForm extends Component {
           onChange={this.handleChange}
           value={this.state.message}
           type="text"
-          placeholder="Type your message and press ENTER"
+          placeholder="Text Message..."
         />
       <Button
         style={sendButton}
