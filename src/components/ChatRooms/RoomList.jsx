@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+
 import Button from '@material-ui/core/Button';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
 
 import CreateRoomForm from './CreateRoomForm';
 import CreateRoomButton from './CreateRoomButton';
@@ -35,7 +38,8 @@ class RoomList extends Component {
 
   state = {
     createRoomButtonClicked: false,
-    roomName: ''
+    roomName: '',
+    anchorEl: null,
   }
 
   createRoomHandler = () => {
@@ -47,6 +51,14 @@ class RoomList extends Component {
       roomName: e.target.value
     })
   }
+
+  handleClick = event => {
+    this.setState({ anchorEl: event.currentTarget });
+  };
+
+  handleClose = () => {
+    this.setState({ anchorEl: null });
+  };
 
   handleSubmit = (e) => {
     e.preventDefault();
@@ -60,6 +72,7 @@ class RoomList extends Component {
 
 
   render() {
+    const { anchorEl } = this.state;
     const orderedRooms = [...this.props.rooms].sort((a, b) => a.id - b.id)
     return (
       <div className="roomList child">
@@ -69,10 +82,21 @@ class RoomList extends Component {
               <i className="fas fa-user-friends"></i>
             </Button>
             <Button
+              onClick={this.handleClick}
               style={options}
-              onClick={this.props.optionsToggleClickHandler}>
+              >
               <i className="fas fa-ellipsis-v"></i>
             </Button>
+            <Menu
+              anchorEl={anchorEl}
+              open={Boolean(anchorEl)}
+              onClose={this.handleClose}
+              >
+              <MenuItem onClick={() => {this.props.optionsToggleClickHandler(); this.handleClose()}}>Settings</MenuItem>
+              <MenuItem onClick={this.handleClose}>Dark Theme</MenuItem>
+              <MenuItem onClick={this.handleClose}>Logout</MenuItem>
+
+            </Menu>
           </div>
           <div className="room-title">Your Rooms</div>
           {orderedRooms.map(room => {
