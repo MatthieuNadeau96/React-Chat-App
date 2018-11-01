@@ -456,7 +456,7 @@
 .option {
   width: 75%;
   margin: auto;
-  padding: 10px 30px;
+  padding-bottom: 20px;
 }
 
 .switch-option {
@@ -517,6 +517,7 @@
 
   .option {
     width: 100%;
+    padding: 0 30px 20px 30px;
   }
 }
 
