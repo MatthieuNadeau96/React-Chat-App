@@ -414,7 +414,7 @@
   transform: translateY(-210%);
   width: 500px;
   height: 500px;
-  margin: 5% auto;
+  margin: 200px auto;
   left: 0;
   right: 0;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -456,7 +456,7 @@
 .option {
   width: 75%;
   margin: auto;
-  padding-bottom: 20px;
+  padding: 10px 30px;
 }
 
 .switch-option {
@@ -517,7 +517,6 @@
 
   .option {
     width: 100%;
-    padding: 0 30px 20px 30px;
   }
 }
 
