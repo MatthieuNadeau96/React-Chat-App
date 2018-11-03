@@ -28,12 +28,6 @@ class Options extends Component {
     return (
       <div className="options">
         <div className="option switch-option">
-          <p>Dark Theme</p>
-          <Switch
-              color="primary"
-            />
-        </div>
-        <div className="option switch-option">
           <p>System Notifications</p>
           <Switch
               color="primary"
