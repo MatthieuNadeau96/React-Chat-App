@@ -12,7 +12,7 @@ const OptionsMenu = props => {
 
   return (
     <div className={menuClasses.join(' ')}>
-      <div className="optionMenuTitle">Options</div>
+      <div className="optionMenuTitle">Settings</div>
       <Options />
       <div className='doneButtonSection'>
         <Button
