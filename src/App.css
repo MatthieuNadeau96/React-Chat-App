@@ -39,21 +39,21 @@
 
 /* SCROLLBARS */
 ::-webkit-scrollbar {
-    display: none;
-    width: 10px;
+    width: 6px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: inherit;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #f0f0f0;
+    border-radius: 25px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #dbdbdb;
 }
 
 
@@ -430,26 +430,31 @@
 
 .optionMenuTitle {
   text-transform: uppercase;
-  text-align: center;
-  margin: auto;
+  text-align: left;
+  margin-bottom: 4px;
+  padding: 36px 36px 0;
+  font-weight: bold;
 }
 
 .optionsOpen {
   transform: translateY(0%);
 }
 
-.backButton {
-  float: left;
-  margin-left: 20px !important;
+.doneButtonSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 36px;
 }
 
-.invisibleBtn {
-  margin-right: 20px !important;
-  visibility: hidden;
+.doneButton {
+  text-transform: capitalize !important;
+  min-width: 72px !important;
+  display: inline-block !important;
+  font-weight: bold !important;
 }
 
 .options {
-  /* padding: 0 10px; */
   overflow-y: scroll;
 }
 

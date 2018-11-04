@@ -12,33 +12,25 @@ const OptionsMenu = props => {
 
   return (
     <div className={menuClasses.join(' ')}>
-      <div className="optionMenuHeader">
+      <div className="optionMenuTitle">Options</div>
+      <Options />
+      <div className='doneButtonSection'>
         <Button
           onClick={props.backBtnClicked}
           style={backBtn}
-          className="backButton">
-          <i className="material-icons">arrow_back</i>
+          className="doneButton">
+          Done
         </Button>
-        <h2 className="optionMenuTitle">Options</h2>
-          <Button
-            className="invisibleBtn">
-            hidden
-          </Button>
       </div>
-      <Options />
     </div>
   )
 }
 
 const backBtn = {
-  display: 'block',
-  background: "inherit",
-  color: "#969CB6",
-  padding: 0,
-  height: 40,
-  width: 40,
-  fontSize: 25,
-  borderRadius: "50%"
+  background: "#3E3EF4",
+  color: "#fff",
+  fontSize: 14,
+  borderRadius: 3,
 }
 
 export default OptionsMenu;
