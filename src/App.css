@@ -184,9 +184,9 @@
 }
 
 .createRoomButton {
-  margin-top: 10px;
   display: flex;
   justify-content: center;
+  height: 100%;
   width: 100%;
 }
 
@@ -202,6 +202,7 @@
   font-size: 24px;
   cursor: pointer;
   transition: all 250ms;
+  margin-bottom: 20px;
 }
 .createRoomButton button:focus {
   outline: none;
