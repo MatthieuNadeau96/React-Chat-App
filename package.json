@@ -8,7 +8,7 @@
     "@material-ui/lab": "^3.0.0-alpha.21",
     "@pusher/chatkit": "^0.7.17",
     "@tippy.js/react": "^1.0.0",
-    "npm": "^6.10.1",
+    "npm": "^6.14.6",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-scripts": "^3.0.1",
